@@ -2,31 +2,20 @@ import type { GetStaticProps, NextPage } from 'next';
 import getRepositories from '../modules/getRepositories/getRepositories';
 import { allowedRepos } from 'configs/allowedRepos';
 import { RepoType } from 'modules/getRepositories/types';
-import Link from 'next/link';
-import Hero from 'components/Hero';
+import { Hero } from 'components/Hero';
+import { Layout } from 'components/Layout';
+import { Projects } from 'components/Projects';
 
 interface Props {
     repos: RepoType[];
 }
 
-const Home: NextPage<Props> = ({ repos }) => {
-    return (
-        <div>
-            <Hero />
-            <section id='projects'>
-                <h2>Projects</h2>
-                {repos?.map(({ name, git_url }) => (
-                    <div key={name}>
-                        {name}
-                        <Link href={git_url}>
-                            <button>sprawdź</button>
-                        </Link>
-                    </div>
-                ))}
-            </section>
-        </div>
-    );
-};
+const Home: NextPage<Props> = ({ repos }) => (
+    <Layout>
+        <Hero />
+        <Projects repos={repos} />
+    </Layout>
+);
 
 export default Home;
 
