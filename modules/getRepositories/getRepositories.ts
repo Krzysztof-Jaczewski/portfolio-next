@@ -1,14 +1,18 @@
-import axios from 'axios';
 import { RepoType } from './types';
+import { createClient } from 'contentful';
 
-const username = 'Krzysztof-Jaczewski';
-const apiUrl = `https://api.github.com/users/${username}/repos`;
-const getRepositories = async (): Promise<RepoType[]> => {
+const contentfulClient = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID as string,
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN as string,
+});
+
+const getRepositories = async (): Promise<RepoType> => {
     try {
-        const res = await axios.get(apiUrl);
-        return res.data;
+        const res =
+            (await contentfulClient.getEntries()) as unknown as RepoType;
+        return res;
     } catch (error) {
-        return [];
+        return {};
     }
 };
 
