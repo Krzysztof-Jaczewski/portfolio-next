@@ -7,7 +7,7 @@ import { Layout } from 'components/Layout';
 import { Projects } from 'components/Projects';
 
 interface Props {
-    repos: RepoType[];
+    repos: RepoType;
 }
 
 const Home: NextPage<Props> = ({ repos }) => (
@@ -22,9 +22,5 @@ export default Home;
 export const getStaticProps: GetStaticProps = async () => {
     const repos = await getRepositories();
 
-    const filteredRepos = repos.filter(({ name }) =>
-        allowedRepos.includes(name)
-    );
-
-    return { props: { repos: filteredRepos } };
+    return { props: { repos: repos } };
 };
