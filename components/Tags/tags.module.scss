@@ -1,0 +1,10 @@
+.techWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    .tag {
+        background-color: gray;
+        padding: 6px 9px;
+        border-radius: 14px;
+    }
+}
