@@ -4,11 +4,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import devImage from '/public/images/dev.png';
 
-const hero: FC = () => {
+const Hero: FC = () => {
     return (
         <section className={styles.header}>
             <div>
-                <h2> Krzysztof Jaczewski</h2>
+                <h2>Krzysztof Jaczewski</h2>
                 <h3>frond-end designer</h3>
                 <Link href='/#projects' className={styles.button}>
                     Check projects
@@ -24,4 +24,4 @@ const hero: FC = () => {
     );
 };
 
-export default hero;
+export default Hero;
