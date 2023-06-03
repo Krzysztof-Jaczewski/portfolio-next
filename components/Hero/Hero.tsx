@@ -11,7 +11,7 @@ const Hero: FC = () => (
             <h2>Frond-end developer</h2>
             <LinkButton
                 className={styles.button}
-                text='Projekty'
+                text='Wybrane Projekty'
                 link='/#projects'
             />
         </div>
