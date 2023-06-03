@@ -1,9 +1,16 @@
 @import 'styles/variables';
+@import 'styles/breakpoints';
 
 .siteWrapper {
-    background-image: $siteBackground;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     color: $primary-text;
+
+    main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 16px;
+        @include md {
+            padding: 40px;
+        }
+    }
 }
