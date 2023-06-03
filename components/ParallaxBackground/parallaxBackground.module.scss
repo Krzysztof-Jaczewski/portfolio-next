@@ -13,7 +13,7 @@
 
     .marks {
         position: absolute;
-        font-size: 40px;
+        font-size: clamp(20px, 4vw, 40px);
         &:nth-last-of-type(5n + 1) {
             color: chartreuse;
         }
