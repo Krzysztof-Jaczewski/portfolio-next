@@ -5,16 +5,20 @@ import { RepoType } from 'modules/getRepositories/types';
 import { Hero } from 'components/Hero';
 import { Layout } from 'components/Layout';
 import { Projects } from 'components/Projects';
+import { ParallaxBackground } from 'components/ParallaxBackground';
 
 interface Props {
     repos: RepoType;
 }
 
 const Home: NextPage<Props> = ({ repos }) => (
-    <Layout>
-        <Hero />
-        <Projects repos={repos} />
-    </Layout>
+    <>
+        <ParallaxBackground />
+        <Layout>
+            <Hero />
+            <Projects repos={repos} />
+        </Layout>
+    </>
 );
 
 export default Home;
