@@ -3,7 +3,12 @@
     flex-wrap: wrap;
     gap: 12px;
     .tag {
-        background-color: gray;
+        background-image: linear-gradient(
+            to right,
+            #f27121cc,
+            #e94057cc,
+            #8a2387cc
+        );
         padding: 6px 9px;
         border-radius: 14px;
     }
