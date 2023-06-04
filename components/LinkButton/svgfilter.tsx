@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 const SvgFilter: FC = () => (
-    <svg xmlns='http://www.w3.org/2000/svg' version='1.1'>
+    <svg width={60} xmlns='http://www.w3.org/2000/svg' version='1.1'>
         <defs>
             <filter id='gooey'>
                 <feGaussianBlur
