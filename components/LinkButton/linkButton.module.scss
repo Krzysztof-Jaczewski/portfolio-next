@@ -34,7 +34,7 @@
 
             @for $bubble from 1 through 10 {
                 &:nth-child(#{$bubble}) {
-                    $size: 20px;
+                    $size: 25px;
                     left: (random(80) * 1%);
                     width: $size;
                     height: $size;

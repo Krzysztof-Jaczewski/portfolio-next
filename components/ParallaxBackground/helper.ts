@@ -62,32 +62,9 @@ export const useMarksArray = () => {
                 left: `calc(50% - ${x}px)`,
             },
         },
+
         {
             id: 'mark7',
-            content: '{}',
-            style: {
-                top: `calc(2% - ${y}px)`,
-                left: `calc(50% - ${x}px)`,
-            },
-        },
-        {
-            id: 'mark8',
-            content: '===',
-            style: {
-                top: `calc(25% - ${y}px)`,
-                left: `calc(40% + ${x}px)`,
-            },
-        },
-        {
-            id: 'mark9',
-            content: '()=>',
-            style: {
-                top: `calc(7% + ${y}px)`,
-                left: `calc(8% + ${x}px)`,
-            },
-        },
-        {
-            id: 'mark10',
             content: '{}',
             style: {
                 top: `calc(64% - ${y}px)`,
@@ -95,31 +72,23 @@ export const useMarksArray = () => {
             },
         },
         {
-            id: 'mark11',
+            id: 'mark8',
             content: '()=>',
             style: {
-                top: `calc(60% + ${y}px)`,
-                left: `calc(15% - ${x}px)`,
+                top: `calc(50% + ${y}px)`,
+                left: `calc(95% - ${x}px)`,
             },
         },
         {
-            id: 'mark13',
-            content: '()=>',
-            style: {
-                top: `calc(80% - ${y}px)`,
-                left: `calc(84% - ${x}px)`,
-            },
-        },
-        {
-            id: 'mark14',
+            id: 'mark9',
             content: '==',
             style: {
-                top: `calc(48% + ${y}px)`,
-                left: `calc(84% - ${x}px)`,
+                top: `calc(2% + ${y}px)`,
+                left: `calc(64% - ${x}px)`,
             },
         },
         {
-            id: 'mark15',
+            id: 'mark10',
             content: 'const',
             style: {
                 top: `calc(23% - ${y}px)`,
@@ -127,7 +96,7 @@ export const useMarksArray = () => {
             },
         },
         {
-            id: 'mark16',
+            id: 'mark11',
             content: '//',
             style: {
                 top: `calc(28% - ${y}px)`,
@@ -135,7 +104,7 @@ export const useMarksArray = () => {
             },
         },
         {
-            id: 'mark17',
+            id: 'mark12',
             content: ':)',
             style: {
                 top: `calc(90% + ${y}px)`,
@@ -143,7 +112,7 @@ export const useMarksArray = () => {
             },
         },
         {
-            id: 'mark18',
+            id: 'mark13',
             content: 'let',
             style: {
                 top: `calc(8% + ${y}px)`,
@@ -151,7 +120,7 @@ export const useMarksArray = () => {
             },
         },
         {
-            id: 'mark19',
+            id: 'mark14',
             content: '!==',
             style: {
                 top: `calc(76% - ${y}px)`,
@@ -159,7 +128,7 @@ export const useMarksArray = () => {
             },
         },
         {
-            id: 'mark20',
+            id: 'mark15',
             content: '+=',
             style: {
                 top: `calc(46% + ${y}px)`,
@@ -167,7 +136,7 @@ export const useMarksArray = () => {
             },
         },
         {
-            id: 'mark21',
+            id: 'mark16',
             content: '${}',
             style: {
                 top: `calc(5% - ${y}px)`,
@@ -175,7 +144,7 @@ export const useMarksArray = () => {
             },
         },
         {
-            id: 'mark22',
+            id: 'mark17',
             content: '&&',
             style: {
                 top: `calc(95% - ${y}px)`,
