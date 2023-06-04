@@ -59,7 +59,7 @@ export const useMarksArray = () => {
             content: '</>',
             style: {
                 top: `calc(80% - ${y}px)`,
-                left: `calc(50% - ${x}px)`,
+                left: `calc(90% - ${x}px)`,
             },
         },
 
