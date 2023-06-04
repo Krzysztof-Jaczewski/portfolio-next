@@ -23,7 +23,7 @@
         padding: 0 4px;
         letter-spacing: 1.2px;
         font-family: 'Varela', sans-serif;
-
+        animation: textAppeared 1.5s linear forwards;
         @include md {
             font-size: 24px;
         }
@@ -50,9 +50,20 @@
 
     .author {
         text-align: right;
+        animation: textAppeared 1s 1.5s linear forwards;
+        opacity: 0;
         &::before {
             content: '-';
             padding-right: 4px;
         }
+    }
+}
+
+@keyframes textAppeared {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
