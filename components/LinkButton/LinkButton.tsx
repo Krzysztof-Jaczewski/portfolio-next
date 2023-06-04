@@ -1,8 +1,6 @@
 import { FC } from 'react';
-import styles from './linkButton.module.scss';
 import Link from 'next/link';
-import clsx from 'clsx';
-import SvgFilter from 'components/LinkButton/svgfilter';
+import { BubbleButton } from 'components/BubbleButton';
 
 interface Props {
     link: string;
@@ -11,14 +9,8 @@ interface Props {
 }
 
 const LinkButton: FC<Props> = ({ link, text, className }) => (
-    <Link href={link} className={clsx(styles.button, className)}>
-        {text}
-        <SvgFilter />
-        <span className={styles.bubbles}>
-            {[...Array(10)].map((_, index) => (
-                <span key={index} className={styles.bubble} />
-            ))}
-        </span>
+    <Link href={link}>
+        <BubbleButton text={text} className={className} />
     </Link>
 );
 
