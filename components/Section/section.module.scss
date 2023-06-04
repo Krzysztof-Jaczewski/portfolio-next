@@ -1,10 +1,14 @@
+@import 'styles/breakpoints';
+
 .sectionWrapper {
     width: 100%;
     display: grid;
     gap: 40px;
     padding: 100px 0;
 
-    .header {
-        margin: 0;
+    .heading {
+        @include md {
+            font-size: 48px;
+        }
     }
 }
