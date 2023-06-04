@@ -1,4 +1,5 @@
 @import 'styles/variables';
+@import 'styles/breakpoints';
 
 .button {
     padding: 12px;
@@ -11,6 +12,29 @@
     position: relative;
     background-color: $primary;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:active {
+        background-color: $primary-dark;
+        .bubbles .bubble {
+            background-color: $primary-dark;
+        }
+    }
+    @include md {
+        &:hover {
+            background-color: $primary-light;
+            .bubbles .bubble {
+                background-color: $primary-light;
+            }
+        }
+        &:active {
+            background-color: $primary-dark;
+            .bubbles .bubble {
+                background-color: $primary-dark;
+            }
+        }
+    }
 
     &:focus {
         outline: none;
