@@ -8,7 +8,7 @@
     width: 300px;
     margin: 50px auto;
     position: relative;
-    padding: 20px 60px;
+    padding: 20px 40px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 0 40px;
 
@@ -43,7 +43,7 @@
 
         &:after {
             content: '”';
-            right: 40px;
+            right: 26px;
             bottom: 50px;
         }
     }
