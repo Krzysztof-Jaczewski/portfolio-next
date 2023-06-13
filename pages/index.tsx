@@ -5,6 +5,7 @@ import { Hero } from 'components/Hero';
 import { Layout } from 'components/Layout';
 import { Projects } from 'components/Projects';
 import { Quote } from 'components/Quote';
+import SeoData from 'components/SeoData/SeoData';
 
 interface Props {
     repos: RepoType;
@@ -12,6 +13,10 @@ interface Props {
 
 const Home: NextPage<Props> = ({ repos }) => (
     <Layout>
+        <SeoData
+            title='Portfolio'
+            description='Portfolio website to present current skills and projects on github'
+        />
         <Hero />
         <Quote
             text='Success is not final, failure is not fatal: it is the courage to continue that counts.'
