@@ -1,12 +1,17 @@
 import { useEffect, useState } from 'react';
 
+const backgroundIconsMoveSpread = 20; // Higher numer means lower spread
+
 export const useMarksArray = () => {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
     const { x, y } = cursorPosition;
 
     useEffect(() => {
         const updateMousePosition = (event: globalThis.MouseEvent) => {
-            setCursorPosition({ x: event.clientX / 15, y: event.clientY / 15 });
+            setCursorPosition({
+                x: event.clientX / backgroundIconsMoveSpread,
+                y: event.clientY / backgroundIconsMoveSpread,
+            });
         };
 
         window.addEventListener('mousemove', updateMousePosition);
