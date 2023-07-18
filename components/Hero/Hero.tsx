@@ -5,7 +5,7 @@ import devImage from '/public/images/dev.png';
 import { ScrollButton } from 'components/ScrollButton';
 
 const Hero: FC = () => (
-    <div className={styles.header}>
+    <div className={styles.header} id='hero'>
         <div className={styles.intro}>
             <h1>Krzysztof Jaczewski</h1>
             <h2>Frond-end developer</h2>
