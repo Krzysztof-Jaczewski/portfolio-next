@@ -97,7 +97,7 @@ export const useMarksArray = () => {
             content: 'const',
             style: {
                 top: `calc(23% - ${y}px)`,
-                left: `calc(98% - ${x}px)`,
+                left: `calc(94% - ${x}px)`,
             },
         },
         {
@@ -120,8 +120,8 @@ export const useMarksArray = () => {
             id: 'mark13',
             content: 'let',
             style: {
-                top: `calc(8% + ${y}px)`,
-                left: `calc(95% - ${x}px)`,
+                top: `calc(20% + ${y}px)`,
+                left: `calc(8% - ${x}px)`,
             },
         },
         {
@@ -144,8 +144,8 @@ export const useMarksArray = () => {
             id: 'mark16',
             content: '${}',
             style: {
-                top: `calc(5% - ${y}px)`,
-                left: `calc(20% + ${x}px)`,
+                top: `calc(10% - ${y}px)`,
+                left: `calc(40% + ${x}px)`,
             },
         },
         {
