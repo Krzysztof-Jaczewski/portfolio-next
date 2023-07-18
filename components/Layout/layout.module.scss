@@ -6,7 +6,7 @@
     color: $primary-text;
 
     main {
-        max-width: 1400px;
+        max-width: $max-site-width;
         margin: 0 auto;
         padding: 16px;
         @include md {
