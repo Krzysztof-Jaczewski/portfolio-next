@@ -1,0 +1,52 @@
+@import 'styles/breakpoints';
+
+.logo {
+    width: 120px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s;
+    animation: flyIn 0.5s ease-out;
+    &:hover {
+        transform: scale(0.95);
+    }
+
+    &.flyout {
+        animation: flyOut 1s ease-in forwards;
+    }
+}
+
+@keyframes flyIn {
+    0% {
+        transform: translate(100px, -100px) rotateZ(-70deg) scale(0.8);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+}
+@keyframes flyOut {
+    0% {
+        transform: scale(0.8);
+    }
+    40%,
+    44%,
+    48%,
+    52%,
+    56%,
+    60% {
+        transform: rotateZ(92deg) scale(0.8);
+    }
+    42%,
+    46%,
+    50%,
+    54%,
+    58% {
+        transform: rotateZ(88deg) scale(0.8);
+    }
+    72% {
+        transform: rotateZ(90deg) scale(0.8);
+    }
+    100% {
+        transform: translate(0px, -100px) rotateZ(90deg) scale(0.8);
+    }
+}
