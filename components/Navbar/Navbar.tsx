@@ -1,41 +1,19 @@
-import { FC, useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
+import { FC } from 'react';
 import styles from './navbar.module.scss';
-import Image from 'next/image';
-import clsx from 'clsx';
+import { AnimatedLogo } from 'components/AnimatedLogo';
+import { NavLinks } from 'components/Navbar/Components/NavLinks';
 
-const Navbar: FC = () => {
-    const [isClicked, setIsClicked] = useState(false);
+const links = [
+    { text: 'Projekty', href: 'projects' },
+    { text: 'Umiejętności', href: 'skills' },
+];
 
-    useEffect(() => {
-        setTimeout(() => {
-            setIsClicked(false);
-        }, 1000);
-    }, [isClicked]);
-
-    return (
-        <header className={styles.header}>
-            <div className={styles.wrapper}>
-                <Link
-                    to='hero'
-                    duration={500}
-                    offset={-100}
-                    smooth
-                    className={clsx(styles.logo, isClicked && styles.flyout)}
-                    onClick={() => {
-                        setIsClicked((prevState) => !prevState);
-                    }}
-                >
-                    <Image fill src='/logo.png' alt='' />
-                </Link>
-                <nav className={styles.nav}>
-                    <Link to='projects' duration={500} smooth>
-                        Projekty
-                    </Link>
-                </nav>
-            </div>
-        </header>
-    );
-};
-
+const Navbar: FC = () => (
+    <header className={styles.header}>
+        <div className={styles.wrapper}>
+            <AnimatedLogo />
+            <NavLinks links={links} />
+        </div>
+    </header>
+);
 export default Navbar;
