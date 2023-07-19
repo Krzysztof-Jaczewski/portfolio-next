@@ -1,0 +1,47 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.indicator {
+    position: absolute;
+    height: 75px;
+    width: 150px;
+    background-color: purple;
+    transition: 0.5s;
+    z-index: 1;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: purple;
+        transition: 0.5s;
+        top: 0;
+        width: 50px;
+        height: 15px;
+        border-radius: 15px;
+    }
+
+    &::before {
+        left: -30px;
+        box-shadow: 10px 30px purple, 5px 60px purple, -15px 15px darkblue,
+            -10px 45px darkblue;
+    }
+    &::after {
+        right: -30px;
+        box-shadow: 5px 30px purple, -15px 60px purple, 15px 15px darkblue,
+            10px 45px darkblue;
+    }
+
+    &.activeTag {
+        &::before {
+            left: -10px;
+            box-shadow: -20px 30px purple, -5px 60px purple, -5px 15px darkblue,
+                -15px 45px darkblue;
+        }
+        &::after {
+            right: -20px;
+            box-shadow: 15px 30px purple, 15px 60px purple, 20px 15px darkblue,
+                5px 45px darkblue;
+        }
+    }
+}
