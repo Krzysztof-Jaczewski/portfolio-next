@@ -5,7 +5,7 @@
     position: absolute;
     height: 75px;
     width: 150px;
-    background-color: purple;
+    background-color: $indicatorColor;
     transition: 0.5s;
     z-index: 1;
 
@@ -13,7 +13,7 @@
     &::after {
         content: '';
         position: absolute;
-        background-color: purple;
+        background-color: $indicatorColor;
         transition: 0.5s;
         top: 0;
         width: 50px;
@@ -23,25 +23,25 @@
 
     &::before {
         left: -30px;
-        box-shadow: 10px 30px purple, 5px 60px purple, -15px 15px darkblue,
-            -10px 45px darkblue;
+        box-shadow: 10px 30px $indicatorColor, 5px 60px $indicatorColor,
+            -15px 15px $navbarColor, -10px 45px $navbarColor;
     }
     &::after {
         right: -30px;
-        box-shadow: 5px 30px purple, -15px 60px purple, 15px 15px darkblue,
-            10px 45px darkblue;
+        box-shadow: 5px 30px $indicatorColor, -15px 60px $indicatorColor,
+            15px 15px $navbarColor, 10px 45px $navbarColor;
     }
 
     &.activeTag {
         &::before {
             left: -10px;
-            box-shadow: -20px 30px purple, -5px 60px purple, -5px 15px darkblue,
-                -15px 45px darkblue;
+            box-shadow: -20px 30px $indicatorColor, -5px 60px $indicatorColor,
+                -5px 15px $navbarColor, -15px 45px $navbarColor;
         }
         &::after {
             right: -20px;
-            box-shadow: 15px 30px purple, 15px 60px purple, 20px 15px darkblue,
-                5px 45px darkblue;
+            box-shadow: 15px 30px $indicatorColor, 15px 60px $indicatorColor,
+                20px 15px $navbarColor, 5px 45px $navbarColor;
         }
     }
 }

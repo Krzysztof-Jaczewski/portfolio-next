@@ -4,7 +4,7 @@ $siteBackground: linear-gradient(
     rgba(9, 9, 121, 1) 35%,
     rgba(0, 212, 255, 1) 100%
 );
-$tagsBackground: linear-gradient(to right, #f27121cc, #e94057cc, #8a2387cc);
+$tagsBackground: linear-gradient(to right, #b1035acc, #5a0b9bcc, #0f1fb4cc);
 
 $primary-text: #fff;
 
@@ -16,3 +16,6 @@ $primary: #e94097;
 $primary-dark: #e91097;
 
 $max-site-width: 1400px;
+
+$indicatorColor: purple;
+$navbarColor: darkblue;
