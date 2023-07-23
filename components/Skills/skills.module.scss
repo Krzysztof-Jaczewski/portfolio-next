@@ -1,7 +1,21 @@
-.projectsWrapper {
+.skillsWrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
+
+    .skillsBox {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 20px;
+
+        .skillsList {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            gap: 4px;
+        }
+    }
 }
