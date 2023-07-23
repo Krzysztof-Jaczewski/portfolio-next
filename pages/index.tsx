@@ -6,6 +6,7 @@ import { Layout } from 'components/Layout';
 import { Projects } from 'components/Projects';
 import { Quote } from 'components/Quote';
 import SeoData from 'components/SeoData/SeoData';
+import { Skills } from 'components/Skills';
 
 interface Props {
     repos: RepoType;
@@ -27,6 +28,7 @@ const Home: NextPage<Props> = ({ repos }) => (
             text='Those who want to leave footprints will never fly'
             author='Sadhguru'
         />
+        <Skills />
     </Layout>
 );
 
