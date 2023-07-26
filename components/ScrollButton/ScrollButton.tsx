@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Link } from 'react-scroll';
-import { BubbleButton } from 'components/BubbleButton';
+import { Button } from 'components/Button';
 
 interface Props {
     link: string;
@@ -10,7 +10,7 @@ interface Props {
 
 const ScrollButton: FC<Props> = ({ link, text, className }) => (
     <Link to={link} duration={500} smooth>
-        <BubbleButton text={text} className={className} />
+        <Button text={text} className={className} />
     </Link>
 );
 

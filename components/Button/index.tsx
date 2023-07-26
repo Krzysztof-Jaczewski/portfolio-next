@@ -1,1 +1,1 @@
-export { default as BubbleButton } from './Button';
+export { default as Button } from './Button';

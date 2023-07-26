@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Link from 'next/link';
-import { BubbleButton } from 'components/BubbleButton';
+import { Button } from 'components/Button';
 
 interface Props {
     link: string;
@@ -10,7 +10,7 @@ interface Props {
 
 const LinkButton: FC<Props> = ({ link, text, className }) => (
     <Link href={link}>
-        <BubbleButton text={text} className={className} />
+        <Button text={text} className={className} />
     </Link>
 );
 
