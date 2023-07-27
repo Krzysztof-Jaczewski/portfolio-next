@@ -9,7 +9,7 @@ const Skills: FC = () => {
             <div className={styles.skillsWrapper}>
                 {Object.entries(skillsSet).map(([key, value]) => (
                     <div className={styles.skillsBox} key={key}>
-                        <h3>{key}</h3>
+                        <h3 className={styles.skillsHeading}>{key}</h3>
                         <ul className={styles.skillsList}>
                             {value.map((skill) => (
                                 <li key={skill}>{skill}</li>
