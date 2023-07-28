@@ -27,15 +27,11 @@ const NavLinks: FC<Props> = ({ links, ...rest }) => {
     return (
         <nav className={clsx(styles.wrapper)} {...rest}>
             {links.map(({ text, href }) => (
-                <div
-                    key={text}
-                    className={styles.link}
-                    onClick={handleLinkClick}
-                >
-                    <Link to={href} duration={500} smooth>
+                <Link key={text} to={href} duration={500} smooth>
+                    <div className={styles.link} onClick={handleLinkClick}>
                         {text}
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             ))}
             <Indicator isToggled={isToggled} style={indicatorStyles} />
         </nav>
