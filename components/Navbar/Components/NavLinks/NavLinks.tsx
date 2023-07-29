@@ -14,7 +14,6 @@ interface Props {
 const NavLinks: FC<Props> = ({ links, ...rest }) => {
     const [indicatorStyles, setIndicatorStyles] = useState({});
     const [isToggled, setIsToggled] = useState(false);
-    console.log('TCL: [isToggled', isToggled);
 
     const handleLinkClick = (event: MouseEvent<HTMLDivElement>) => {
         setIndicatorStyles({
