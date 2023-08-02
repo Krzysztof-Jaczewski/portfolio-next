@@ -14,10 +14,12 @@ const Projects: FC<Props> = ({ repos }) => {
         <Section id='projects' title='Projects'>
             <div className={styles.projectsWrapper}>
                 {repos.items?.map(
-                    ({ fields: { image, description, ...rest } }) => (
+                    ({ fields: { image, description, link, ...rest } }) => (
                         <Card
                             key={rest.title}
                             image={`https:${image.fields.file.url}`}
+                            gitHubLink={link}
+                            siteLink={link}
                             description={
                                 description.content[0].content[0].value
                             }

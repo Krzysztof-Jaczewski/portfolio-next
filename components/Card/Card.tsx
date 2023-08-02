@@ -7,7 +7,8 @@ import { LinkButton } from 'components/LinkButton';
 
 interface Props extends HTMLProps<HTMLDivElement> {
     title: string;
-    link: string;
+    gitHubLink: string;
+    siteLink: string;
     techStack: string[];
     image: string;
     description: string;
@@ -15,7 +16,8 @@ interface Props extends HTMLProps<HTMLDivElement> {
 
 const Card: FC<Props> = ({
     title,
-    link,
+    gitHubLink,
+    siteLink,
     image,
     techStack,
     description,
@@ -30,7 +32,8 @@ const Card: FC<Props> = ({
                 <h2 className={styles.title}>{title}</h2>
                 <p>{description}</p>
                 <Tags techStack={techStack} />
-                <LinkButton text='Sprawdź' link={link} />
+                <LinkButton text='</>' link={gitHubLink} />
+                <LinkButton text='Zobacz' link={siteLink} />
             </div>
         </div>
     );
